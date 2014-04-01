@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Engine</title>
+		<link rel="stylesheet" href="engine.css" type="text/css" />
+		<link rel="stylesheet" id="theme" href="light.css" type="text/css" /> <!-- theme switcher -->
+	</head>
+	<body>
+		<div id="container">
+			<!-- score -->
+			<div id="score">Score: 0</div>
+			<!-- themes -->
+			<div class="theme" name="light">Light</div>
+			<div class="theme" name="dark">Dark</div>
+			
+			<!-- console output -->
+			<ul id="display"></ul>
+			<hr>
+			
+			<!-- command line -->
+			<input type="text" placeholder=">>" id="cmd" />
+			<hr>
+			
+			<!-- erroneous info -->
+			<center>
+				Mouse Command Control:<br />
+				<table border="0" style="width: 320px;">
+				<tr>
+				<td class="clickCommand" name="north">(<b>N</b>)orth</td>
+				<td class="clickCommand" name="south">(<b>S</b>)outh</td>
+				<td class="clickCommand" name="east">(<b>E</b>)ast</td>
+				<td class="clickCommand" name="west">(<b>W</b>)est</td>
+				</tr><tr>
+				<td class="clickCommand" name="look">(<b>L</b>)ook</td>
+				<td class="clickCommand" name="look something">(<b>L</b>)ook <b>something</b></td>
+				<td class="clickCommand" name="look out">(<b>L</b>)ook <b>out</b></td>
+				<td class="clickCommand" name="look me">(<b>L</b>)ook <b>me</b></td>
+				</tr><tr>
+				<td class="clickCommand" name="read something">(<b>R</b>)ead</td>
+				<td class="clickCommand" name="open something">(<b>O</b>)pen</td>
+				<td class="clickCommand" name="close something">(<b>C</b>)lose</td>
+				<td class="clickCommand" name="take something">(<b>T</b>)ake</td>
+				</tr><tr>
+				<td class="clickCommand" name="drop something">(<b>D</b>)rop</td>
+				<td class="clickCommand" name="inventory">(<b>I</b>)nventory</td>
+				<td class="clickCommand" name="equip something">(<b>Equip</b>)</td>
+				<td class="clickCommand" name="unequip">(<b>Unequip</b>)</td>
+				</tr><tr>
+				<td class="clickCommand" name="attack">(<b>A</b>)ttack</td>
+				<td class="clickCommand" name="smell">(<b>S</b>mell)</td>
+				<td class="clickCommand" name="clear">(<b>Clear</b>)</td>
+				</tr>
+				</table>
+			</center>
+		</div>
+		
+		<!-- scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="engine/areas.js"></script>
+		<script src="engine/objects.js"></script>
+		<script src="engine/items.js"></script>
+		<script src="engine/clothes.js"></script>
+		<script src="engine/you.js"></script>
+		<script src="engine/zeds.js"></script>
+		<script src="engine/engine.js"></script>
+	</body>
+</html>
