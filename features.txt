@@ -1,15 +1,9 @@
-TextAdventureEngine
-===================
+==============================
+= Text Adventure - Features: =
+==============================
 
-My Text Adventure Engine for people to check out!
-
-Demo: http://engine.nuhack.com/basic/
-Development Demo: http://engine.nuhack.com/dev/ 
-
-
-SOME MORE INFO
-===================
 Bugs:
+
 .   Cannot look/take shorthand aliases from objects
     I.e. 'take jacket' from a cabinet won't work
          but 'take leather jacket' will work
@@ -55,8 +49,15 @@ Updates:
 
 
 Future Plans:
+
 .	Farming
 .	Cooking
 .	Infection/disease
 .	Random/user create-able maps
 .	More items/weapons/containers and zombies
+.	Friendly NPCs
+.	Survivors
+
+
+http://engine.nuhack.com/dev/?v=XXX
+http://172.28.10.131/Dropbox/xplor/

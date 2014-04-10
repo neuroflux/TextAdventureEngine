@@ -1,0 +1,89 @@
+body {
+background-color: #C7E1F2;
+background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+background-image: -webkit-linear-gradient(white 2px, transparent 2px),
+                  -webkit-linear-gradient(0, white 2px, transparent 2px),
+                  -webkit-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                  -webkit-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);
+background-image: -moz-linear-gradient(white 2px, transparent 2px),
+                  -moz-linear-gradient(0, white 2px, transparent 2px),
+                  -moz-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                  -moz-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);
+background-image: linear-gradient(white 2px, transparent 2px),
+                  linear-gradient(90deg, white 2px, transparent 2px),
+                  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+-pie-background: linear-gradient(white 2px, transparent 2px) -2px -2px / 100px,
+                 linear-gradient(90deg, white 2px, transparent 2px) -2px -2px / 100px,
+                 linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,
+                 linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,
+                 #C7E1F2;
+behavior: url(pie/PIE.htc);
+}
+clothes {
+	color: purple;
+}
+exits {
+	color: brown;
+}
+objects {
+	color: blue;
+}
+items {
+	color: green;
+}
+zeds {
+	color: red;
+}
+food {
+	color: #494949;
+}
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+.black {
+	color: black;
+}
+.brown {
+	color: brown;
+}
+.blue {
+	color: blue;
+}
+.orange {
+	color: #CC6F3D;
+}
+.purple {
+	color: purple;
+}
+.title {
+	background-color: #333;
+	color: #f4f4f4;
+}
+#expContainer, #hpContainer, #hungerContainer {
+	background: linear-gradient(45deg, white 25%, silver 25%, silver 50%, white 50%, white 75%, silver 75%, silver);
+	background-size:10px 10px;
+}
+#experience {
+	background-color: purple;
+}
+#container, #display {
+	border: 1px solid silver;
+}
+#container {
+	background-color: #f4f4f4;
+}
+objects span:hover, items span:hover, clothes span:hover, food span:hover, mats span:hover {
+	color: #333;
+}
+#mouseControl .clickCommand, #mouseControl .instantClickCommand {
+	border: 1px solid silver;
+}
+#mouseControl .clickCommand:hover, #mouseControl .instantClickCommand:hover {
+	background-color:#333;
+	color: #f4f4f4;
+}

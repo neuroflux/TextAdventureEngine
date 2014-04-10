@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+		<title>Text Adventure Engine - Zombie Survival</title>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="engine.css?v=1" type="text/css" />
+		<link rel="stylesheet" id="theme" href="themes/light.css" type="text/css" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="topbar">
+				<div id="score">Score: 0</div>
+				<div id="health">HP: 50</div>
+				<div id="hunger">Hunger: 0%</div>
+				<div id="zTimer">&nbsp;&nbsp;&nbsp;Z-Move: </div><span id="moveTimer">30</span>
+			</div>
+			
+			<div id="floatingLeft">				
+				<div class="title">Your<br />Health</div>
+				<div id="hpContainer">
+					<div id="hpLevel"></div>
+				</div>
+				<div class="title">Your<br />Hunger</div>
+				<div id="hungerContainer">
+					<div id="hungerLevel"></div>
+				</div>
+				<div class="title">Your<br />Experience</div>
+				<div id="expContainer">
+					<div id="experience"></div>
+				</div>
+				
+				<div class="title">Your<br />Stats</div>
+				<div class="stat">Level: <span id="lvl">1</span></div>
+				<div class="stat">Strength: <span id="str">1</span></div>
+				<div class="stat">Speed: <span id="spd">1</span></div>
+				<div class="stat">Accuracy: <span id="acc">0</span></div>
+				<div class="stat">Kills: <span id="kil">0</span></div>
+			</div>
+			
+			<div id="floatingRight">
+				<div class="title">Options</div>
+				<div class="save">Save</div>
+				<div class="load">Load</div>
+				<div class="delete">Delete</div>
+				
+				<div class="title">Theme</div>
+				<div class="theme" name="light" style="background-color:lightgreen;">Light</div>
+				<div class="theme" name="dark">Dark</div>
+				
+				<div class="title">Animation</div>
+				<div class="anim" name="slideIn" style="background-color:lightgreen;">Yeah!</div>
+				<div class="anim" name="null">Nope</div>
+				
+				<div class="title">Animation<br />Tests</div>
+				<div class="animtest" name="AttackAnim">Attack</div>
+				<div class="animtest" name="ForceAnim">Unlock</div>
+				<div class="animtest" name="BloodSplatter1">Hit</div>
+				<div class="animtest" name="BloodSplatter2">Death</div>
+				<div class="animtest" name="BarricadeAnim">Barricading</div>
+				<div class="animtest" name="Smashing">Smashing</div>
+			</div>
+			
+			<div id="actioning">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			<ul id="display">
+				<li><br /><h1>Which Map Do You Want To Play On?<br /></h1></li>
+				<li>1) <a href='' class='map' name='TestArea'>Test Area - An Example</a></li>
+			</ul>
+			<input type="text" placeholder=">>" id="cmd" />
+			<div id="runCommand">Go</div>
+			<div id="clearConsole">Clear</div>
+			
+			<div id="mouseControl">
+				<div class="instantClickCommand" name="north">NORTH</div>
+				<div class="instantClickCommand" name="south">SOUTH</div>
+				<div class="instantClickCommand" name="east">EAST</div>
+				<div class="instantClickCommand" name="west">WEST</div>
+				
+				<div class="clickCommand" name="look">LOOK</div>
+				<div class="instantClickCommand" name="attack">ATTACK</div>
+				<div class="clickCommand" name="take">TAKE</div>
+				<div class="clickCommand" name="drop">DROP</div>
+				
+				<div class="clickCommand" name="give">GIVE</div>
+				<div class="clickCommand" name="open">OPEN</div>
+				<div class="clickCommand" name="close">CLOSE</div>
+				<div class="instantClickCommand" name="inventory">INVENTORY</div>
+				
+				<div class="clickCommand" name="eat">EAT</div>
+				<div class="clickCommand" name="force">FORCE</div>
+				<div class="clickCommand" name="equip">EQUIP</div>
+				<div class="clickCommand" name="unequip">UNEQUIP</div>
+				
+				<div class="clickCommand" name="wear">WEAR</div>
+				<div class="clickCommand" name="read">READ</div>
+				<div class="clickCommand" name="barricade">BARRICADE</div>
+				<div class="instantClickCommand" name="map">MAP</div>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="engine/transition.js"></script>
+		<script src="engine/rumble.js"></script>
+		<script src="engine/areas.js"></script>
+		<script src="engine/objects.js"></script>
+		<script src="engine/barricades.js"></script>
+		<script src="engine/items.js"></script>
+		<script src="engine/food.js"></script>
+		<script src="engine/clothes.js"></script>
+		<script src="engine/you.js"></script>
+		<script src="engine/npcs.js"></script>
+		<script src="engine/survivors.js"></script>
+		<script src="engine/engine.js"></script>
+	</body>
+</html>
